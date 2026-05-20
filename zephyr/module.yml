@@ -1,3 +1,4 @@
 name: meu_app
 build:
   settings:
+    board_root: .

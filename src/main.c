@@ -2,6 +2,10 @@
 
 int main(void)
 {
-    printk("Hello from meu_app!\n");
-    return 0;
+    static int a = 0;
+    while(1) {
+        printk("Hello from meu_app! %d\n", a);
+	a++;
+        k_msleep(5000);
+    }
 }
